@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descrição do meu website">
-    <meta name="keywords" content="palavras-chave,do,meu,site">
+    <meta name="description" content="Site pessoal de Eduardo Coelho">
+    <meta name="keywords" content="Eduardo,Coelho">
     <title>Eduardo Coelho</title>
 </head>
 <body>
