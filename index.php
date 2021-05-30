@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site pessoal de Eduardo Coelho">
     <meta name="keywords" content="Eduardo,Coelho">
+    <link rel="icon" href="images/fav-icon.png" type="image/gif" sizes="18x14">
     <title>Eduardo Coelho</title>
 </head>
 <body>
