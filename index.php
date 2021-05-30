@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição do meu website">
     <meta name="keywords" content="palavras-chave,do,meu,site">
-    <title>Projeto 01</title>
+    <title>Eduardo Coelho</title>
 </head>
 <body>
     <target target="sobre"/>
@@ -97,7 +97,8 @@
                 </p>
                 <p>
                     A área que mais gostei de trabalhar até hoje foi desenvolvimento web.
-                    Tenho conhecimento em HTML5, CSS3, JavaScript e PHP.
+                    Me sinto mais confortável tabalhando com as tecnologias
+                    HTML5, CSS3, JavaScript e PHP (framework Laravel, principalmente).
                 </p>
             </div>
             <div class="w50 left">
@@ -130,10 +131,10 @@
                     </li>
                     <li>
                         <a href="https://hora-do-up.web.app/" target="blank">
-                            <span style="color: #00C59E"><strong>Hora do Up</span></strong>:
-                            um trabalho de faculdade feito por mim, Allan Borges, Eduardo Barboza e Rayanne Souza. 
+                            <span style="color: #00C59E"><strong>Hora do Up</span></strong>
+                        </a>:
+                            um trabalho de faculdade feito em conjunto com Allan Borges, Eduardo Barboza e Rayanne Souza. 
                         O Hora do Up é um site de monitoramento de preços de hardware focado em PC's gamer.
-                        </a>
                     </li>
                 </ul>
                 </div>   
