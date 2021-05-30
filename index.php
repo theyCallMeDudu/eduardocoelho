@@ -1,5 +1,3 @@
-<?php include('config.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,7 +123,7 @@
             <div class="projetos">
                 <ul class="projetos">
                     <li>
-                        <span style="color: #00C59E"><strong>MyShelf</span></strong>:
+                        <span style="color: #00C59E"><strong>MyShelf (em construção)</span></strong>:
                         um sistema web para controle e gerenciamento de seus livros.
                         O MyShelf é a sua estante/ biblioteca digital.
                     </li>
