@@ -4,3 +4,7 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 
 Options -Indexes
+
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
