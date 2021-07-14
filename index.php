@@ -124,11 +124,12 @@
             <div class="projetos">
                 <ul class="projetos">
                     <li>
-                    <a href="https://github.com/theyCallMeDudu/my_shelf">
-                        <span style="color: #00C59E"><strong>MyShelf</span></strong>
-                    </a>:
-                        um sistema web para controle e gerenciamento de seus livros.
-                        O MyShelf é a sua estante/ prateleira virtual.
+                        <a href="https://github.com/theyCallMeDudu/my_shelf.git">
+                            <span style="color: #00C59E"><strong>MyShelf</span></strong>
+                        </a>:
+                        um sistema web para controle e gerenciamento de seus livros e leituras.
+                        O MyShelf é a sua estante/ biblioteca digital. Nele você monta sua estante e
+                        controla tudo o que já leu, está lendo ou pretende ler.
                     </li>
                     <li>
                         <a href="https://hora-do-up.web.app/" target="blank">
@@ -136,6 +137,15 @@
                         </a>:
                             um trabalho de faculdade feito em conjunto com Allan Borges, Eduardo Barboza e Rayanne Souza. 
                         O Hora do Up é um site de monitoramento de preços de hardware focado em PC's gamer.
+                    </li>
+                    <li>
+                        <a href="https://snakegameedu.000webhostapp.com/" target="blank">
+                            <span style="color: #00C59E"><strong>Snake Game!</span></strong>
+                        </a>:
+                            um projeto de recriação do famoso jogo da cobrinha. Este projeto foi parte de um BootCamp
+                             Front-end do qual participei na Digital Innovation One. Este projeto foi desenvolvido apenas
+                              para fins de aprendizagem e exercício dos conceitos de Front-end, sem fins lucrativos. Todos
+                              os direitos reservados a Taneli Amanto, criador da versão original.
                     </li>
                 </ul>
                 </div>   
