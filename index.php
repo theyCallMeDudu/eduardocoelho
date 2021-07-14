@@ -124,9 +124,11 @@
             <div class="projetos">
                 <ul class="projetos">
                     <li>
-                        <span style="color: #00C59E"><strong>MyShelf (em construção)</span></strong>:
+                    <a href="https://github.com/theyCallMeDudu/my_shelf">
+                        <span style="color: #00C59E"><strong>MyShelf</span></strong>
+                    </a>:
                         um sistema web para controle e gerenciamento de seus livros.
-                        O MyShelf é a sua estante/ biblioteca digital.
+                        O MyShelf é a sua estante/ prateleira virtual.
                     </li>
                     <li>
                         <a href="https://hora-do-up.web.app/" target="blank">
