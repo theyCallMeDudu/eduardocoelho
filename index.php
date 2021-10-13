@@ -86,9 +86,9 @@
             <div class="w50 left" id="sobre"><!-- w50 = 50% da largura da tela  -->
                 <h2>Sobre mim</h2>
                 <p>
-                    Tenho 24 anos e estudo <span style="color: #00C59E"><strong>Sistemas de Informação</strong></span> na Universidade Federal
+                    Tenho 25 anos e estudo <span style="color: #00C59E"><strong>Sistemas de Informação</strong></span> na Universidade Federal
                      do Estado do Rio de Janeiro (<span style="color: #00C59E"><strong>UNIRIO</strong></span>).
-                    Atualmente, faço estágio em desenvolvimento na FAPES.
+                    Atualmente, trabalho como programador na Globalweb.
                 </p>
                 <p>
                     Gosto de poder ajudar as pessoas, e, em meus projetos pessoais, 
@@ -138,7 +138,7 @@
                             um trabalho de faculdade feito em conjunto com Allan Borges, Eduardo Barboza e Rayanne Souza. 
                         O Hora do Up é um site de monitoramento de preços de hardware focado em PC's gamer.
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="https://snakegameedu.000webhostapp.com/" target="blank">
                             <span style="color: #00C59E"><strong>Snake Game!</span></strong>
                         </a>:
@@ -146,7 +146,7 @@
                              Front-end do qual participei na Digital Innovation One. Este projeto foi desenvolvido apenas
                               para fins de aprendizagem e exercício dos conceitos de Front-end, sem fins lucrativos. Todos
                               os direitos reservados a Taneli Amanto, criador da versão original.
-                    </li>
+                    </li> -->
                 </ul>
                 </div>   
 
