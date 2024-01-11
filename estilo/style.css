@@ -95,21 +95,29 @@ section.banner-principal {
     background-color: #081c15;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.banner-principal h2 {
-    width: 93%;
-    max-width: 600px;
-    z-index: 2;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+    /* width: 93%; */
+    /* max-width: 600px; */
+    /* z-index: 2; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* -ms-transform: translate(-50%,-50%); */
     color: white;
-    text-align: center;
+    /* text-align: center; */
     font-size: 45px;
     font-weight: 300;
+}
+
+section.banner-principal h3 {
+    color: rgba(235, 235, 235, 0.808);
+    font-weight: 200;
 }
 
 section.banner-principal a {

@@ -1,0 +1,44 @@
+{
+    "tecnologias": [
+        { 
+            "id": 1, 
+            "nome": "PHP",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-plain.svg"
+        },
+        { 
+            "id": 2, 
+            "nome": "Laravel",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain.svg"
+        },
+        { 
+            "id": 3, 
+            "nome": "HTML5",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+        },
+        { 
+            "id": 4, 
+            "nome": "CSS3",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+        },
+        { 
+            "id": 5, 
+            "nome": "JavaScript",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+        },
+        { 
+            "id": 6, 
+            "nome": "jQuery",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-plain.svg"
+        },
+        { 
+            "id": 7, 
+            "nome": "Oracle",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
+        },
+        { 
+            "id": 8, 
+            "nome": "MySQL",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain.svg"
+        }
+    ]
+}

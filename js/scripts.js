@@ -64,6 +64,10 @@ $(function(){
         }
         return age;
     }
-    $idade = getIdade('1996-10-02');
-    $("#idade").html($idade);
+    let idade = getIdade('1996-10-02');
+    $("#idade").html(idade);
+    
+    let anoAtual = new Date();
+    console.log(anoAtual.getFullYear());
+    $("copyrights").html(anoAtual.getFullYear());
 })

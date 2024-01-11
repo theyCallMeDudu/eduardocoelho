@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    color: #FFF;
+}
+
+/** Boot CSS**/
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 4px 0px 36px 0px rgba(0,0,0,0.5);
+}
+
+body {
+    background-color: #25292e;
+    /* margin: 0 20% 0 20%; */
+}
+
+h2 {
+    color: #edee28;
+}
+
+
+.barra-navegacao {
+    background-color: rgba(240, 240, 240, 0.1);
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 25px 200px 25px 200px;
+    /* margin: 0 20% 0 20%; */
+}
+
+.barra-navegacao span {
+    color: #edee28;
+    font-size: 16pt;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.apresentacao {
+    margin: 5% 14% 0 14%;
+}
+
+.dados-apresentacao {
+    /* padding: 25px 200px 25px 200px; */
+    /* margin: 0 20% 0 20%; */
+}
+
+.social {
+    display: flex;
+}
+
+i {
+    color: #000;
+    font-size: 13pt;
+}
+
+.fundo-icone {
+    background-color: #edee28;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    width: 10%;
+}
+
+.img-apresentacao {
+    /* padding: 25px 200px 25px 100px; */
+}
+
+.experiencia {
+    margin: 5% 14% 0 14%;
+}
+
+.formacao {
+    margin: 5% 14% 0 14%;
+}
+
+.bloco-tecnologia {
+    background-color: rgba(240, 240, 240, 0.1);
+}
+
+.bloco-tecnologia img {
+    border-radius: 0;
+    height: 30px;
+    width: 40px;
+    box-shadow: none;
+}
+
+#lista-tecnologias {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#lista-tecnologias div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.projetos {
+    margin: 5% 14% 0 14%;
+}
+
+.logo-projeto {
+    display: flex;
+    justify-content: center;
+}
+
+.descricao-projeto {
+    font-size: 10pt;
+}
+
+.bloco-projeto img {
+    border-radius: 0;
+    height: 100px;
+    width: 120px;
+    box-shadow: none;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #edee28 !important;
+}
+
+.footer p {
+    color: #000;
+    font-weight: 600;
+}
+
+#copyrights {
+    color: #000;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .barra-navegacao {
+        padding: 5px 10px 5px 10px;
+    }
+
+    .barra-navegacao span {
+        font-size: 10pt;
+    }
+
+    .apresentacao {
+        margin: 10px 0 0 0;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .dados-apresentacao h1 {
+        font-size: 18pt;
+    }
+
+    .social {
+        justify-content: space-between;
+    }
+
+    .social .fundo-icone {
+        padding: 5px;
+        margin: 0;
+        width: 20%;
+    }
+
+    .img-apresentacao {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-apresentacao img {
+        max-width: 350px;
+    }
+
+    .experiencia {
+        margin: 4%;
+    }
+
+    .formacao {
+        margin: 4%;
+    }
+
+    #lista-tecnologias div {
+        width: 23%;
+        margin-bottom: 10px;
+    }
+
+    .projetos {
+        margin: 4%;
+    }
+
+
+}
