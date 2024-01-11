@@ -81,7 +81,7 @@ $(function() {
         
         // Inicializando o carrossel após adicionar os itens
         new bootstrap.Carousel(document.getElementById('myCarousel'), {
-          interval: 3000,
+          interval: 6000,
           pause: "hover"
         });
       });
