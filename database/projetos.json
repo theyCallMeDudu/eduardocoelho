@@ -5,28 +5,28 @@
             "nome": "MyShelf",
             "descricao": "Um sistema web para controle e gerenciamento de seus livros e leituras. O MyShelf é a sua estante/ biblioteca digital. Nele você monta sua estante e controla tudo o que já leu, está lendo ou pretende ler.",
             "url": "https://github.com/theyCallMeDudu/my_shelf.git",
-            "img": "../src/img/projetos/my_shelf.png"
+            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/my_shelf.png?alt=media&token=6b052ac0-f724-4189-9ec3-40fef8e0c331"
         },
         { 
             "id": 2, 
             "nome": "Hora do Up",
             "descricao": "Um trabalho de faculdade feito em conjunto com Allan Borges, Eduardo Barboza e Rayanne Souza. O Hora do Up é um site de monitoramento de preços de hardware focado em PC's gamer.",
             "url": "https://hora-do-up.web.app/",
-            "img": "../src/img/projetos/hora_do_up_2.png"
+            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/hora_do_up_2.png?alt=media&token=afe50e1a-d172-4ada-948c-7c5241644711"
         },
         { 
             "id": 3, 
             "nome": "Consulta CEP",
             "descricao": "Um projeto didático desenvolvido para aplicar conceitos de consumo de APIs via JavaScript. Este projeto se utilizou da API Via CEP , disponibilizada gratuitamente na Web. Nele você pode consultar CEPs de todo o Brasil.",
             "url": "https://consultacepweb.web.app/",
-            "img": "../src/img/projetos/consulta_cep.svg"
+            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/consulta_cep.svg?alt=media&token=e019c756-518c-40e8-9c11-e3b6e80fa451"
         },
         { 
             "id": 4, 
             "nome": "Corridas que corri",
             "descricao": "Um site desenvolvido para aplicar conceitos de React. Este projeto serviu de estudo da tecnologia e exibição de uma das minhas paixões esportivas, corridas de rua.",
             "url": "https://corridas-que-corri-c9402.web.app/",
-            "img": "../src/img/projetos/corridas_que_corri.png"
+            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/corridas_que_corri.png?alt=media&token=0e0cde5c-1888-439e-9420-f4a50236bee4"
         }
     ]
 }
