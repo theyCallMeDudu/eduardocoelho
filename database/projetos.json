@@ -5,7 +5,7 @@
             "nome": "MyShelf",
             "descricao": "Um sistema web para controle e gerenciamento de seus livros e leituras. O MyShelf é a sua estante/ biblioteca digital. Nele você monta sua estante e controla tudo o que já leu, está lendo ou pretende ler.",
             "url": "https://github.com/theyCallMeDudu/my_shelf.git",
-            "img": "../src/img/projetos/my_shelf.svg"
+            "img": "../src/img/projetos/my_shelf.png"
         },
         { 
             "id": 2, 
@@ -26,7 +26,7 @@
             "nome": "Corridas que corri",
             "descricao": "Um site desenvolvido para aplicar conceitos de React. Este projeto serviu de estudo da tecnologia e exibição de uma das minhas paixões esportivas, corridas de rua.",
             "url": "https://corridas-que-corri-c9402.web.app/",
-            "img": "../src/img/projetos/"
+            "img": "../src/img/projetos/corridas_que_corri.png"
         }
     ]
 }

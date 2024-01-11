@@ -1,126 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="estilo/style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site pessoal de Eduardo Coelho">
     <meta name="keywords" content="Eduardo,Coelho">
-    <link rel="icon" href="images/fav-icon.png" type="image/gif" sizes="18x14">
+    <script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Caminho local do CSS do Bootstrap -->
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Caminho local do JavaScript do Bootstrap -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link href="estilo/estilo.css" rel="stylesheet">
+    <link rel="icon" href="src/img/fav-icon.png" type="image/gif" sizes="18x14">
     <title>Eduardo Coelho</title>
 </head>
 <body>
-    <target target="sobre"/>
-    <section class="banner-principal">
-        <div></div><!-- overlay -->
-        <div class="center">
-            <h2>Olá, eu sou <span class="nome">Eduardo Coelho</span>.</h2>
-            <h3>(ele/ dele)</h3>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="https://github.com/theyCallMeDudu" target="blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+    <section>
+        <nav class="navbar navbar-expand-lg barra-navegacao">
+            <div style="background-color: transparent !important;">
+                <span>Eduardo Coelho</span>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/eduardo-coelho-/" target="blank">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
                     </li>
-                    <li>
-                        <a href="mailto:eduardo.coelho@edu.unirio.br" target="blank">
-                            <i class="fas fa-envelope"></i> eduardo.coelho@edu.unirio.br
-                        </a>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                     </li>
-                </ul>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul> -->
+                </div>
             </div>
-        </div> 
-        <div class="setaDescer">
-            <i class="fas fa-chevron-down"></i>
-        </div>
+            </nav>
     </section>
-
-    <!-- descricao-autor -->
-    <section class="descricao-autor">
-        <div class="center">
-            <div class="w50 left" id="sobre"><!-- w50 = 50% da largura da tela  -->
-                <h2>Sobre mim</h2>
-                <p>
-                    Tenho <span id="idade"></span> anos e sou bacharel em <span style="color: #00C59E"><strong>Sistemas de Informação</strong></span> pela Universidade Federal
-                     do Estado do Rio de Janeiro (<span style="color: #00C59E"><strong>UNIRIO</strong></span>).
-                    Atualmente, trabalho como Desenvolvedor na <a href="https://www.globalweb.com.br/" target="_blank">Globalweb</a>, no setor de fábrica de software.
-                </p>
-                <p>
-                    Gosto de poder ajudar as pessoas, e, em meus projetos 
-                    busco sempre desenvolver de forma que facilite o dia a dia delas.
-                </p>
-                <p>
-                    A área que mais gostei de trabalhar até hoje foi desenvolvimento web.
-                    Me sinto mais confortável tabalhando com as tecnologias
-                    HTML5, CSS3, JavaScript e PHP (framework Laravel, principalmente).
-                </p>
+    <section class="apresentacao">
+        <div class="row">
+            <div class="col-md-8 dados-apresentacao">
+                <h1>Olá, eu sou o Eduardo Coelho!</h1>
+                <p>(ele/ dele)</p>
+        
+                <p>Sou carioca e tenho <span id="idade"></span> anos.</p>
+                <p>Flamenguista, fã do Lewis Hamilton e programador. Amo correr e lutar boxe.</p>
+                <p>O que mais gosto no meu trabalho é ver o resultado do que construí e ver o que fiz sendo usado pelas pessoas.</p>
+        
+                <div class="social">
+                    <div class="fundo-icone">
+                        <a href="https://github.com/theyCallMeDudu" target="blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="fundo-icone">
+                        <a href="https://www.linkedin.com/in/eduardo-coelho-/" target="blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="fundo-icone">
+                        <a href="mailto:eduardo.coelho@edu.unirio.br" target="blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="w50 left">
-                <img class="right" src="images/foto-autor.jpg" alt="Foto do autor">
-            </div><!-- w50 -->
-            <div class="clear"></div>
-        </div><!-- center -->
-    </section><!-- descricao-autor -->
+            <div class="col-md-4 img-apresentacao">
+                <img class="right" src="../src/img/foto-autor.jpg" alt="Foto do autor">
+            </div>
+        </div>
+        <hr style="color: #edee28;">
+    </section>
+    <section class="experiencia">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Experiência profissional</h2>
+                <p>
+                    Trabalho na <a href="https://www.globalweb.com.br/" target="_blank">Globalweb</a>, no setor de fábrica de software, como Desenvolvedor PHP, desde julho de 2021.
+                    Possuo experiência na área de TI com ênfase em desenvolvimento web, melhorias e correções utilizando, principalmente, a metodologia Scrum, e tecnologias como Laravel, HTML5, CSS3, jQuery e banco de dados Oracle.
+                </p>
 
-    <!-- projetos -->
-    <section class="descricao-autor">
-        <div class="center">
-            <div class="w50 left"><!-- w50 = 50% da largura da tela  -->
+            </div>
+        </div>
+        <hr style="color: #edee28;">
+    </section>
+    <section class="formacao">
+        <div class="row">
+            <h2>Formação e Tecnologias</h2>
+            <p>
+                Sou bacharel em <span style="color: #edee28"><strong>Sistemas de Informação</strong></span> pela Universidade Federal 
+                do Estado do Rio de Janeiro (<span style="color: #edee28"><strong>UNIRIO</strong></span>).
+            </p>
+            <p>
+                Aliadas à graduação, abaixo estão algumas das tecnologias que mais tive contato e utilizo em meio dia a dia. 
+            </p>
+            <div class="row" id="lista-tecnologias">
+
+            </div>
+        </div>
+        <hr style="color: #edee28;">
+    </section>
+    <section class="projetos">
+        <div class="row">
             <h2>Projetos</h2>
-                    <p>
-                        Alguns projetos pessoais e trabalhos da faculdade.
-                    </p>
-                    <p>
-                        Meu <a href="https://github.com/theyCallMeDudu" target="blank"><i class="fab fa-github"></i> <span style="color: #00C59E"><strong>GitHub</span></strong></a>
-                    </p>
-                    <p>Entre em contato: <strong><a href="mailto:eduardo.coelho@edu.unirio.br" style="color: #00C59E">eduardo.coelho@edu.unirio.br</a></strong></p>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner">
+                <!-- As divs do carrossel serão adicionadas dinamicamente aqui -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>                    
+        </div>
+        <hr style="color: #edee28;">
+    </section>
+    <section>
+        <footer class="footer">
+            <p>© 1996-<span id="copyrights"></span>, Eduardo Coelho</p>
+            <div class="social">
+                <div class="col-md-1 fundo-icone">
+                    <a href="https://github.com/theyCallMeDudu" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="col-md-1 fundo-icone">
+                    <a href="https://www.linkedin.com/in/eduardo-coelho-/" target="blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="col-md-1 fundo-icone">
+                    <a href="mailto:eduardo.coelho@edu.unirio.br" target="blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-            <div class="w50 left">
-            <div class="projetos">
-                <ul class="projetos">
-                    <li>
-                        <a href="https://github.com/theyCallMeDudu/my_shelf.git">
-                            <span style="color: #00C59E"><strong>MyShelf</span></strong>
-                        </a>:
-                        um sistema web para controle e gerenciamento de seus livros e leituras.
-                        O MyShelf é a sua estante/ biblioteca digital. Nele você monta sua estante e
-                        controla tudo o que já leu, está lendo ou pretende ler.
-                    </li>
-                    <li>
-                        <a href="https://hora-do-up.web.app/" target="blank">
-                            <span style="color: #00C59E"><strong>Hora do Up</span></strong>
-                        </a>:
-                            um trabalho de faculdade feito em conjunto com Allan Borges, Eduardo Barboza e Rayanne Souza. 
-                        O Hora do Up é um site de monitoramento de preços de hardware focado em PC's gamer.
-                    </li>
-                    <li>
-                        <a href="https://consultacepweb.web.app/" target="blank">
-                            <span style="color: #00C59E"><strong>Consulta CEP</span></strong>
-                        </a>:
-                            um projeto didático desenvolvido para aplicar conceitos de consumo de APIs
-                        via JavaScript. 
-                        Este projeto se utilizou da API <span style="font-style: italic;">
-                        <a href="https://viacep.com.br/" alt="Link API Via CEP">Via CEP</a>
-                        </span>, disponibilizada gratuitamente na Web.
-                        Nele você pode consultar CEPs de todo o Brasil.
-                    </li>
-                </ul>
-                </div>   
-
-            </div><!-- w50 -->
-            <div class="clear"></div>
-        </div><!-- center -->
-    </section><!-- descricao-autor -->
+        </footer>
+    </section>
     <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/funcoes.js"></script>
 </body>
 </html>
