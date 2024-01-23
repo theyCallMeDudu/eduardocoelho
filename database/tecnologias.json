@@ -39,6 +39,11 @@
             "id": 8, 
             "nome": "MySQL",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain.svg"
+        },
+        {
+            "id": 9, 
+            "nome": "React JS",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
         }
     ]
 }

@@ -27,6 +27,13 @@
             "descricao": "Um site desenvolvido para aplicar conceitos de React. Este projeto serviu de estudo da tecnologia e exibição de uma das minhas paixões esportivas, corridas de rua.",
             "url": "https://corridas-que-corri-c9402.web.app/",
             "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/corridas_que_corri.png?alt=media&token=0e0cde5c-1888-439e-9420-f4a50236bee4"
+        },
+        {
+            "id": 5, 
+            "nome": "Clima Local",
+            "descricao": "Um projeto didático desenvolvido para aplicar conceitos de React JS e consumo de APIs.",
+            "url": "https://clima-local.web.app/",
+            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/clima-local-logo.png?alt=media&token=b68748dc-59f3-4054-8632-64ac4af6fdad"
         }
     ]
 }
