@@ -31,7 +31,7 @@
         {
             "id": 5, 
             "nome": "Clima Local",
-            "descricao": "Um projeto didático desenvolvido para aplicar conceitos de React JS e consumo de APIs.",
+            "descricao": "Um projeto didático desenvolvido para aplicar conceitos de React JS e consumo de APIs. Fornece o clima atual da localização em que o usuário se encontra através dos dados do GPS do dispositivo utilizado.",
             "url": "https://clima-local.web.app/",
             "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/clima-local-logo.png?alt=media&token=b68748dc-59f3-4054-8632-64ac4af6fdad"
         }
