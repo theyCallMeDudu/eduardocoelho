@@ -8,7 +8,7 @@
         { 
             "id": 2, 
             "nome": "Laravel",
-            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain.svg"
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg"
         },
         { 
             "id": 3, 
@@ -38,7 +38,7 @@
         { 
             "id": 8, 
             "nome": "MySQL",
-            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain.svg"
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
         },
         {
             "id": 9, 
