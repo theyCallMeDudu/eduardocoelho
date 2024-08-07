@@ -44,6 +44,11 @@
             "id": 9, 
             "nome": "React JS",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+        },
+        {
+            "id": 10, 
+            "nome": "Angular",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/angular-original.svg"
         }
     ]
 }
