@@ -22,31 +22,21 @@
         },
         { 
             "id": 5, 
-            "nome": "JavaScript",
-            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+            "nome": "Typescript",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"
         },
         { 
             "id": 6, 
-            "nome": "jQuery",
-            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-plain.svg"
-        },
-        { 
-            "id": 7, 
             "nome": "Oracle",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
         },
         { 
-            "id": 8, 
+            "id": 7, 
             "nome": "MySQL",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
         },
         {
-            "id": 9, 
-            "nome": "React JS",
-            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-        },
-        {
-            "id": 10, 
+            "id": 8, 
             "nome": "Angular",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/angular/angular-original.svg"
         }
