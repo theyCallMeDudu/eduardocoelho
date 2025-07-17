@@ -25,20 +25,21 @@
             "nome": "Typescript",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"
         },
-        { 
+        {
             "id": 6, 
+            "nome": "Angular",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/angular/angular-original.svg"
+        },
+        { 
+            "id": 7, 
             "nome": "Oracle",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
         },
         { 
-            "id": 7, 
+            "id": 8, 
             "nome": "MySQL",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
         },
-        {
-            "id": 8, 
-            "nome": "Angular",
-            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/angular/angular-original.svg"
-        }
+
     ]
 }
