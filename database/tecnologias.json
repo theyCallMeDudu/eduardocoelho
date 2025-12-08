@@ -38,7 +38,7 @@
         { 
             "id": 8, 
             "nome": "MySQL",
-            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+            "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
         }
     ]
 }
