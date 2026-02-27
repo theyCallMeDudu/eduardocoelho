@@ -39,6 +39,11 @@
             "id": 8, 
             "nome": "MySQL",
             "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+        },
+        {
+            "id": 9,
+            "nome": "Git",
+            "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
         }
     ]
 }
