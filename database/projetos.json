@@ -5,35 +5,42 @@
             "nome": "MyShelf",
             "descricao": "Um sistema web para controle e gerenciamento de seus livros e leituras. O MyShelf é a sua estante/ biblioteca digital. Nele você monta sua estante e controla tudo o que já leu, está lendo ou pretende ler.",
             "url": "https://github.com/theyCallMeDudu/my_shelf.git",
-            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/my_shelf.png?alt=media&token=3c78d3ce-eeb7-4200-8208-522ef9d99f15"
+            "img": "src/img/projetos/my_shelf.png"
         },
         { 
             "id": 2, 
             "nome": "Hora do Up",
             "descricao": "Um trabalho de faculdade feito em conjunto com Allan Borges, Eduardo Barboza e Rayanne Souza. O Hora do Up é um site de monitoramento de preços de hardware focado em PC's gamer.",
             "url": "https://hora-do-up.web.app/",
-            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/hora_do_up_2.png?alt=media&token=afe50e1a-d172-4ada-948c-7c5241644711"
+            "img": "src/img/projetos/hora_do_up_2.png"
         },
         { 
             "id": 3, 
             "nome": "Consulta CEP",
             "descricao": "Um projeto didático desenvolvido para aplicar conceitos de consumo de APIs via JavaScript. Este projeto se utilizou da API Via CEP , disponibilizada gratuitamente na Web. Nele você pode consultar CEPs de todo o Brasil.",
             "url": "https://consultacepweb.web.app/",
-            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/consulta_cep.svg?alt=media&token=e019c756-518c-40e8-9c11-e3b6e80fa451"
+            "img": "src/img/projetos/consulta_cep.svg"
         },
         { 
             "id": 4, 
             "nome": "Corridas que corri",
             "descricao": "Um site desenvolvido para aplicar conceitos de React. Este projeto serviu de estudo da tecnologia e exibição de uma das minhas paixões esportivas, corridas de rua.",
             "url": "https://corridas-que-corri-c9402.web.app/",
-            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/corridas_que_corri.png?alt=media&token=0e0cde5c-1888-439e-9420-f4a50236bee4"
+            "img": "src/img/projetos/corridas_que_corri.png"
         },
         {
             "id": 5, 
             "nome": "Clima Local",
             "descricao": "Um projeto didático desenvolvido para aplicar conceitos de React JS e consumo de APIs. Fornece o clima atual da localização em que o usuário se encontra através dos dados do GPS do dispositivo utilizado.",
             "url": "https://clima-local.web.app/",
-            "img": "https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/clima-local-logo.png?alt=media&token=b68748dc-59f3-4054-8632-64ac4af6fdad"
+            "img": "https://clima-local.web.app/logo192.png"
+        },
+        {
+            "id": 6, 
+            "nome": "Maxx Lubrificantes",
+            "descricao": "Site de exibição de produtos e serviços do cliente, desenvolvido para uma distribuidora de lubrificantes industriais.",
+            "url": "https://www.maxxlubrificantes.com.br/",
+            "img": "src/img/projetos/maxx-logo.png"
         }
     ]
 }

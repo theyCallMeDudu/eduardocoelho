@@ -25,8 +25,9 @@ $(function() {
         let itemHTML = '';
         tecnologias.forEach(function(tecnologia) {
             itemHTML += `
-                <div class="col-md-1 bloco-tecnologia" data-toggle="tooltip" title="${tecnologia.nome}">
+                <div class="col-md-1 bloco-tecnologia">
                     <img src="${tecnologia.img}" alt="${tecnologia.nome}">
+                    <span class="tech-nome">${tecnologia.nome}</span>
                 </div>
             `;
         });
@@ -40,49 +41,51 @@ $(function() {
         let carouselInner = $('#carousel-inner');
         
         projetos.forEach(function(projeto, index) {
-            let itemCarrossel = '';
-            if (index === 0) {
-                itemCarrossel = `
-                    <div class="carousel-item active bloco-projeto" data-toggle="tooltip" title="${projeto.nome}">
-                        <div class="row">
-                            <div class="col-md-4 logo-projeto">
-                                <a href="${projeto.url}" target="blank">
-                                    <img src="${projeto.img}" alt="${projeto.nome}">
-                                </a>
-                            </div>
-                            <div class="col-md-8 descricao-projeto">
-                                <h3>${projeto.nome}</h3>
-                                <p>${projeto.descricao}</p>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            } else {
-                itemCarrossel = `
-                    <div class="carousel-item bloco-projeto" data-toggle="tooltip" title="${projeto.nome}">
-                        <div class="row">
-                            <div class="col-md-4 logo-projeto">
-                            <a href="${projeto.url}" target="blank">
-                            <img src="${projeto.img}" alt="${projeto.nome}">
+            const activeClass = index === 0 ? ' active' : '';
+            let itemCarrossel = `
+                <div class="carousel-item${activeClass} bloco-projeto">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 logo-projeto">
+                            <a href="${projeto.url}" target="_blank" rel="noopener noreferrer">
+                                <img src="${projeto.img}" alt="${projeto.nome}">
                             </a>
-                            </div>
-                            <div class="col-md-8">
-                                <h3>${projeto.nome}</h3>
-                                <p descricao-projeto>${projeto.descricao}</p>
-                            </div>
+                        </div>
+                        <div class="col-md-8 descricao-projeto">
+                            <h3>${projeto.nome}</h3>
+                            <p>${projeto.descricao}</p>
                         </div>
                     </div>
-                `;
-            }
+                    <div class="carousel-progress-track">
+                        <div class="carousel-progress-fill"></div>
+                    </div>
+                </div>
+            `;
           
           // Adicionando o conteúdo diretamente ao carouselInner
           carouselInner.append(itemCarrossel);
         });
         
-        // Inicializando o carrossel após adicionar os itens
-        new bootstrap.Carousel(document.getElementById('myCarousel'), {
-          interval: 6000,
-          pause: "hover"
+        const INTERVAL = 7000;
+
+        const carouselEl = document.getElementById('myCarousel');
+
+        new bootstrap.Carousel(carouselEl, {
+          interval: INTERVAL,
+          pause: 'hover'
         });
+
+        function startProgressBar() {
+            const fill = carouselEl.querySelector('.carousel-item.active .carousel-progress-fill');
+            if (!fill) return;
+            fill.classList.remove('running');
+            void fill.offsetWidth; // força reflow para reiniciar a animação
+            fill.classList.add('running');
+        }
+
+        // slid dispara após a transição terminar e o active já estar no novo item
+        carouselEl.addEventListener('slid.bs.carousel', startProgressBar);
+
+        // inicia no primeiro slide
+        startProgressBar();
       });
 })

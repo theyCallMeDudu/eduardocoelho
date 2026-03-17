@@ -77,28 +77,62 @@ i {
 }
 
 .bloco-tecnologia {
-    background-color: rgba(240, 240, 240, 0.1);
+    background-color: rgba(240, 240, 240, 0.08);
+    cursor: default;
+    transition: transform 0.28s ease, background-color 0.28s ease, box-shadow 0.28s ease;
+    position: relative;
+}
+
+.bloco-tecnologia:hover {
+    transform: translateY(-7px) scale(1.12);
+    background-color: rgba(237, 238, 40, 0.12);
+    box-shadow: 0 8px 22px rgba(237, 238, 40, 0.18);
+    z-index: 1;
 }
 
 .bloco-tecnologia img {
     border-radius: 0;
-    height: 30px;
-    width: 40px;
+    height: 34px;
+    width: 34px;
     box-shadow: none;
+    transition: filter 0.28s ease;
+}
+
+.bloco-tecnologia:hover img {
+    filter: drop-shadow(0 0 7px rgba(237, 238, 40, 0.55));
+}
+
+.tech-nome {
+    font-size: 7pt;
+    text-align: center;
+    margin-top: 5px;
+    color: transparent;
+    transition: color 0.25s ease;
+    white-space: nowrap;
+    display: block;
+}
+
+.bloco-tecnologia:hover .tech-nome {
+    color: #edee28;
 }
 
 #lista-tecnologias {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
 #lista-tecnologias div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
+    padding: 12px 10px;
     border-radius: 10px;
 }
+
 .projetos {
     margin: 5% 14% 0 14%;
 }
@@ -106,17 +140,69 @@ i {
 .logo-projeto {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .descricao-projeto {
     font-size: 10pt;
 }
 
+.bloco-projeto {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(237, 238, 40, 0.12);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bloco-projeto:hover {
+    border-color: rgba(237, 238, 40, 0.35);
+}
+
 .bloco-projeto img {
-    border-radius: 0;
-    height: 100px;
-    width: 120px;
-    box-shadow: none;
+    border-radius: 10px !important;
+    height: 110px;
+    width: auto;
+    max-width: 160px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: contain;
+}
+
+.bloco-projeto:hover img {
+    transform: scale(1.06);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55) !important;
+}
+
+.carousel-fade .carousel-item {
+    transition: opacity 1.1s ease-in-out;
+}
+
+.carousel-progress-track {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgba(237, 238, 40, 0.15);
+}
+
+.carousel-progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #edee28;
+    border-radius: 0 2px 0 0;
+}
+
+.carousel-progress-fill.running {
+    animation: carouselProgress 7s linear forwards;
+}
+
+@keyframes carouselProgress {
+    from { width: 0%; }
+    to   { width: 100%; }
 }
 
 .footer {
