@@ -38,54 +38,102 @@ $(function() {
 
     $.getJSON('database/projetos.json', function(data) {
         let projetos = data.projetos;
-        let carouselInner = $('#carousel-inner');
-        
+        let sliderEl = document.getElementById('projects-slider');
+        let dotsEl   = document.getElementById('projects-dots');
+
         projetos.forEach(function(projeto, index) {
-            const activeClass = index === 0 ? ' active' : '';
-            let itemCarrossel = `
-                <div class="carousel-item${activeClass} bloco-projeto">
-                    <div class="row align-items-center">
-                        <div class="col-md-4 logo-projeto">
-                            <a href="${projeto.url}" target="_blank" rel="noopener noreferrer">
-                                <img src="${projeto.img}" alt="${projeto.nome}">
-                            </a>
-                        </div>
-                        <div class="col-md-8 descricao-projeto">
-                            <h3>${projeto.nome}</h3>
-                            <p>${projeto.descricao}</p>
-                        </div>
+            let slide = document.createElement('div');
+            slide.className = 'project-slide bloco-projeto' + (index === 0 ? ' active' : '');
+            slide.innerHTML = `
+                <div class="row align-items-center">
+                    <div class="col-md-4 logo-projeto">
+                        <a href="${projeto.url}" target="_blank" rel="noopener noreferrer">
+                            <img src="${projeto.img}" alt="${projeto.nome}">
+                        </a>
                     </div>
-                    <div class="carousel-progress-track">
-                        <div class="carousel-progress-fill"></div>
+                    <div class="col-md-8 descricao-projeto">
+                        <h3>${projeto.nome}</h3>
+                        <p>${projeto.descricao}</p>
                     </div>
                 </div>
+                <div class="project-progress-track">
+                    <div class="project-progress-fill"></div>
+                </div>
             `;
-          
-          // Adicionando o conteúdo diretamente ao carouselInner
-          carouselInner.append(itemCarrossel);
+            sliderEl.appendChild(slide);
+
+            let dot = document.createElement('button');
+            dot.className = 'project-dot' + (index === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'Ir para ' + projeto.nome);
+            dot.addEventListener('click', function() { navigateTo(index); });
+            dotsEl.appendChild(dot);
         });
-        
+
+        const slides = Array.from(sliderEl.querySelectorAll('.project-slide'));
+        const dots   = Array.from(dotsEl.querySelectorAll('.project-dot'));
         const INTERVAL = 7000;
+        let current      = 0;
+        let rafId        = null;
+        let startTime    = null;
+        let pausedAt     = 0;
+        let isPaused     = false;
 
-        const carouselEl = document.getElementById('myCarousel');
-
-        new bootstrap.Carousel(carouselEl, {
-          interval: INTERVAL,
-          pause: 'hover'
-        });
-
-        function startProgressBar() {
-            const fill = carouselEl.querySelector('.carousel-item.active .carousel-progress-fill');
-            if (!fill) return;
-            fill.classList.remove('running');
-            void fill.offsetWidth; // força reflow para reiniciar a animação
-            fill.classList.add('running');
+        function setActive(next) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            slides[next].classList.add('active');
+            dots[next].classList.add('active');
+            current = next;
         }
 
-        // slid dispara após a transição terminar e o active já estar no novo item
-        carouselEl.addEventListener('slid.bs.carousel', startProgressBar);
+        function navigateTo(next) {
+            if (next === current) return;
+            cancelAnimationFrame(rafId);
+            pausedAt = 0;
+            setActive(next);
+            if (!isPaused) startProgress();
+        }
 
-        // inicia no primeiro slide
-        startProgressBar();
-      });
+        function startProgress(fromElapsed) {
+            fromElapsed = fromElapsed || 0;
+            cancelAnimationFrame(rafId);
+            const fill = slides[current].querySelector('.project-progress-fill');
+            if (!fill) return;
+            fill.style.width = (fromElapsed / INTERVAL * 100).toFixed(2) + '%';
+            startTime = performance.now() - fromElapsed;
+
+            function tick(now) {
+                const elapsed = now - startTime;
+                const pct = Math.min(elapsed / INTERVAL * 100, 100);
+                fill.style.width = pct.toFixed(2) + '%';
+                if (pct < 100) {
+                    rafId = requestAnimationFrame(tick);
+                } else {
+                    setActive((current + 1) % slides.length);
+                    pausedAt = 0;
+                    startProgress();
+                }
+            }
+            rafId = requestAnimationFrame(tick);
+        }
+
+        sliderEl.addEventListener('mouseenter', function() {
+            if (!isPaused) {
+                isPaused = true;
+                cancelAnimationFrame(rafId);
+                rafId = null;
+                const fill = slides[current].querySelector('.project-progress-fill');
+                pausedAt = (parseFloat(fill.style.width) / 100) * INTERVAL;
+            }
+        });
+
+        sliderEl.addEventListener('mouseleave', function() {
+            if (isPaused) {
+                isPaused = false;
+                startProgress(pausedAt);
+            }
+        });
+
+        startProgress();
+    });
 })

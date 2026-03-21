@@ -33,14 +33,14 @@
             "nome": "Clima Local",
             "descricao": "Um projeto didático desenvolvido para aplicar conceitos de React JS e consumo de APIs. Fornece o clima atual da localização em que o usuário se encontra através dos dados do GPS do dispositivo utilizado.",
             "url": "https://clima-local.web.app/",
-            "img": "https://clima-local.web.app/logo192.png"
+            "img": "src/img/projetos/clima-local-logo.png"
         },
         {
             "id": 6, 
             "nome": "Maxx Lubrificantes",
             "descricao": "Site de exibição de produtos e serviços do cliente, desenvolvido para uma distribuidora de lubrificantes industriais.",
             "url": "https://www.maxxlubrificantes.com.br/",
-            "img": "src/img/projetos/maxx-logo.png"
+            "img": "src/img/projetos/maxx-lubrificantes-fundo-branco.jpeg"
         }
     ]
 }
