@@ -328,5 +328,22 @@ i {
         margin: 4%;
     }
 
+    .footer {
+        text-align: center;
+    }
 
+    .footer p {
+        width: 100%;
+    }
+
+    .footer .social {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer .social .fundo-icone {
+        width: auto;
+        padding: 6px 10px;
+        margin: 0;
+    }
 }
