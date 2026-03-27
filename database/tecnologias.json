@@ -44,6 +44,11 @@
             "id": 9,
             "nome": "Git",
             "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+        },
+        {
+            "id": 10,
+            "nome": "Node.js",
+            "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"
         }
     ]
 }

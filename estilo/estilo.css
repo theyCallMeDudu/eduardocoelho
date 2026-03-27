@@ -26,7 +26,8 @@ h2 {
     background-color: rgba(240, 240, 240, 0.1);
     margin: 0 !important;
     width: 100% !important;
-    padding: 25px 200px 25px 200px;
+    padding: 25px 14%;
+    border-bottom: 2px solid #edee28;
     /* margin: 0 20% 0 20%; */
 }
 
@@ -245,14 +246,21 @@ i {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    align-items: flex-start;
+    padding: 16px 14%;
     background-color: #edee28 !important;
+}
+
+.footer-nome-profissao {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
 }
 
 .footer p {
     color: #000;
     font-weight: 600;
+    margin: 0;
 }
 
 #copyrights {
@@ -261,12 +269,14 @@ i {
 
 .footer .social {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 12px;
 }
 
 @media screen and (max-width: 768px) {
     .barra-navegacao {
-        padding: 5px 10px 5px 10px;
+        padding: 5px 4%;
     }
 
     .barra-navegacao span {
@@ -329,16 +339,13 @@ i {
     }
 
     .footer {
+        align-items: center;
+        padding: 12px 4%;
         text-align: center;
-    }
-
-    .footer p {
-        width: 100%;
     }
 
     .footer .social {
         justify-content: center;
-        gap: 12px;
     }
 
     .footer .social .fundo-icone {
