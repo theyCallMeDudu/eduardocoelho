@@ -1,160 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site pessoal de Eduardo Coelho">
-    <meta name="keywords" content="Eduardo,Coelho">
-    <script src="https://kit.fontawesome.com/c0209b2941.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Caminho local do CSS do Bootstrap -->
-    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Caminho local do JavaScript do Bootstrap -->
-    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Eduardo Coelho · Desenvolvedor Fullstack Sênior</title>
+    <meta name="description" content="Desenvolvedor Fullstack Sênior com foco em Laravel e Angular. Sistemas web em produção desde 2021.">
+    <link rel="canonical" href="https://theycallmedudu.github.io/eduardocoelho/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://theycallmedudu.github.io/eduardocoelho/">
+    <meta property="og:title" content="Eduardo Coelho · Desenvolvedor Fullstack Sênior">
+    <meta property="og:description" content="Laravel + Angular. Sistemas web em produção desde 2021.">
+    <meta property="og:image" content="https://theycallmedudu.github.io/eduardocoelho/src/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="src/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="estilo/estilo.css" rel="stylesheet">
-    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/eduardocoelho-784e5.appspot.com/o/favicon.ico?alt=media&token=3a279a82-38d2-40da-97f3-0f145c40f2a3" type="image/gif" sizes="18x14">
-    <title>Eduardo Coelho</title>
 </head>
 <body>
-    <section>
-        <nav class="navbar navbar-expand-lg barra-navegacao">
-            <div style="background-color: transparent !important;">
-                <span>Eduardo Coelho</span>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul> -->
-                </div>
-            </div>
-            </nav>
-    </section>
-    <section class="apresentacao">
-        <div class="row">
-            <div class="col-md-8 dados-apresentacao">
-                <h1>Olá, eu sou o Eduardo Coelho!</h1>
-                <p>(ele/ dele)</p>
-        
-                <p>Sou carioca e tenho <span id="idade"></span> anos.</p>
-                <p>Flamenguista, fã de <span style="font-style: italic;">Formula 1</span> e programador. Amo correr e lutar boxe.</p>
-                <p>O que mais gosto no meu trabalho é ver o resultado do que construí e ver o que fiz sendo usado pelas pessoas.</p>
-        
-                <div class="social">
-                    <div class="fundo-icone">
-                        <a href="https://github.com/theyCallMeDudu" target="blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="fundo-icone">
-                        <a href="https://www.linkedin.com/in/eduardo-coelho-/" target="blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="fundo-icone">
-                        <a href="mailto:coelho.edu96@gmail.com" target="blank">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-apresentacao">
-                <img 
-                    class="right" 
-                    src="https://github.com/theyCallMeDudu.png" 
-                    alt="Foto do autor">
-            </div>
-        </div>
-        <hr style="color: #edee28;">
-    </section>
-    <section class="experiencia">
-        <div class="row align-items-center">
-            <div class="col-md-4 img-experiencia">
-                <img
-                    src="src/img/flarun-05-tetra.jpg"
-                    alt="Foto do Eduardo Coelho">
-            </div>
-            <div class="col-md-8">
-                <h2>Experiência profissional</h2>
-                <p>
-                    Atualmente trabalho na <a href="https://www.brilliantmachine.com.br/en/home-en/" target="_blank" style="text-decoration: none; color: #edee28;">Brilliant Machine ✨</a>, no setor de fábrica de software, como Desenvolvedor Fullstack.
-                    Possuo experiência na área de TI com ênfase em desenvolvimento web, melhorias e correções utilizando, principalmente, a metodologia Scrum, e tecnologias como Laravel, Angular, HTML5, CSS3, Typescript e banco de dados Oracle e MySQL.
-                </p>
-            </div>
-        </div>
-        <hr style="color: #edee28;">
-    </section>
-    <section class="formacao">
-        <div class="row">
-            <h2>Formação e Tecnologias</h2>
-            <p>
-                Sou bacharel em <span style="color: #edee28"><strong>Sistemas de Informação</strong></span> pela Universidade Federal 
-                do Estado do Rio de Janeiro (<span style="color: #edee28"><strong>UNIRIO</strong></span>).
-            </p>
-            <p>
-                Aliadas à graduação, abaixo estão algumas das tecnologias com as quais mais tive contato e utilizo no dia a dia. 
-            </p>
-            <div class="row" id="lista-tecnologias">
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+        <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+        <symbol id="i-email" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 5h18v14H3zM3 5l9 8 9-8"/></symbol>
+    </svg>
 
+    <header class="topo">
+        <span class="topo-nome">Eduardo Coelho</span>
+        <nav aria-label="Seções">
+            <a href="#experiencia">Experiência</a>
+            <a href="#stack">Stack</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao apresentacao" aria-labelledby="titulo">
+            <div class="apresentacao-texto">
+                <h1 id="titulo">Eduardo Coelho</h1>
+                <p class="pronomes">(ele/dele)</p>
+                <p class="cargo">Desenvolvedor Fullstack Sênior</p>
+                <p class="pitch">Construo e mantenho sistemas web em produção desde 2021. Hoje atuo pela Brilliant Machine na Facility Grid, empresa norte-americana de comissionamento na construção civil.</p>
+                <div class="acoes">
+                    <a class="botao botao--primario" href="#contato">Entrar em contato</a>
+                    <a class="botao botao--secundario" href="#projetos">Ver projetos</a>
+                </div>
+                <ul class="social">
+                    <li><a class="icone" href="https://github.com/theyCallMeDudu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg aria-hidden="true" width="22" height="22"><use href="#i-github"/></svg></a></li>
+                    <li><a class="icone" href="https://www.linkedin.com/in/eduardo-coelho-/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg aria-hidden="true" width="22" height="22"><use href="#i-linkedin"/></svg></a></li>
+                    <li><a class="icone" href="mailto:coelho.edu96@gmail.com" aria-label="E-mail"><svg aria-hidden="true" width="22" height="22"><use href="#i-email"/></svg></a></li>
+                </ul>
             </div>
+            <img class="foto" src="src/img/foto-perfil.webp" alt="Foto de Eduardo Coelho" width="300" height="300" fetchpriority="high">
+        </section>
+
+        <section class="secao" id="experiencia" aria-labelledby="titulo-experiencia">
+            <h2 id="titulo-experiencia">Experiência</h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-empresa">
+                        <h3><a href="https://www.brilliantmachine.com.br/" target="_blank" rel="noopener noreferrer">Brilliant Machine</a></h3>
+                        <p class="periodo">05/2024 – atual · alocado na Facility Grid (EUA), comissionamento na construção civil</p>
+                    </div>
+                    <ol class="timeline-cargos">
+                        <li class="timeline-cargo">
+                            <h4>Desenvolvedor Fullstack Sênior</h4>
+                            <p class="periodo">07/2024 – atual</p>
+                            <h4>Desenvolvedor Fullstack Pleno</h4>
+                            <p class="periodo">05/2024 – 07/2024</p>
+                            <h5 class="entregas-titulo">Atividades e entregas</h5>
+                            <ul class="entregas">
+                                <li><strong>Integração Facility Grid ↔ Procore:</strong> sincronização bidirecional de issues e observations, cron job que detecta e reativa sincronizações perdidas, resync sob demanda e correção de race conditions.</li>
+                                <li><strong>Tempo real com WebSockets:</strong> as ações longas dependiam de polling a cada 5s, então quem saía da tela perdia o resultado e as telas legadas não recebiam nada. Assumi um projeto já iniciado e levei o WebSocket para todo o produto, da SPA em Angular ao legado em PHP.</li>
+                                <li><strong>Closeout Tracker:</strong> views filtradas salvas por usuário e troca de estatísticas calculadas em tempo real por dados pré-calculados, o que reduziu bastante o tempo de carregamento da tela.</li>
+                                <li><strong>Importação em massa de usuários:</strong> planilhas Excel processadas por filas do Laravel, com tolerância a falhas em grandes volumes.</li>
+                                <li><strong>Questionários gerados por IA:</strong> interface em Angular do fluxo de onboarding, processamento, preview e decisão, com componentes reutilizáveis.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-empresa">
+                        <h3>Globalweb</h3>
+                        <p class="periodo">07/2021 – 04/2024 · alocado no Banco de Brasília (BRB)</p>
+                    </div>
+                    <ol class="timeline-cargos">
+                        <li class="timeline-cargo">
+                            <h4>Desenvolvedor Fullstack Júnior</h4>
+                            <h5 class="entregas-titulo">Atividades e entregas</h5>
+                            <ul class="entregas">
+                                <li><strong>Processos seletivos internos do RH:</strong> módulo completo com formulários parametrizáveis, integração com o Benner para sincronizar usuários e envio automático de e-mails.</li>
+                                <li><strong>Demandas internas de TI:</strong> gestão de demandas com prioridade, complexidade e pontos de função, acompanhamento de sprints e release notes.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-empresa">
+                        <h3>FAPES</h3>
+                        <p class="periodo">12/2019 – 07/2021 · empresa de previdência privada do BNDES</p>
+                    </div>
+                    <ol class="timeline-cargos">
+                        <li class="timeline-cargo">
+                            <h4>Estagiário de Desenvolvimento</h4>
+                            <h5 class="entregas-titulo">Atividades e entregas</h5>
+                            <ul class="entregas">
+                                <li>Funcionalidades e correções em sistemas internos e externos, em OutSystems e SQL Server, com foco em usabilidade e estabilidade.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-empresa">
+                        <h3><a href="https://www.nicephotos.com.br/" target="_blank" rel="noopener noreferrer">Nicephotos</a></h3>
+                        <p class="periodo">03/2019 – 12/2019 · gráfica online</p>
+                    </div>
+                    <ol class="timeline-cargos">
+                        <li class="timeline-cargo">
+                            <h4>Estagiário de Desenvolvimento</h4>
+                            <h5 class="entregas-titulo">Atividades e entregas</h5>
+                            <ul class="entregas">
+                                <li>Evolução, manutenção e suporte de sistemas em C#, JavaScript, jQuery, HTML, CSS e MySQL, com versionamento em SVN e times em Scrum.</li>
+                                <li>Projetos de automação da linha de produção e das vendas.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <section class="secao" id="stack" aria-labelledby="titulo-stack">
+            <h2 id="titulo-stack">Stack</h2>
+            <ul class="lista-tech">
+                <li class="tech"><img src="src/img/tecnologias/php.svg" alt="" width="40" height="40"><span>PHP 8</span></li>
+                <li class="tech"><img src="src/img/tecnologias/laravel.svg" alt="" width="40" height="40"><span>Laravel</span></li>
+                <li class="tech"><img src="src/img/tecnologias/angular.svg" alt="" width="40" height="40"><span>Angular</span></li>
+                <li class="tech"><img src="src/img/tecnologias/typescript.svg" alt="" width="40" height="40"><span>TypeScript</span></li>
+                <li class="tech"><img src="src/img/tecnologias/javascript.svg" alt="" width="40" height="40"><span>JavaScript</span></li>
+                <li class="tech"><img src="src/img/tecnologias/nodejs.svg" alt="" width="40" height="40"><span>Node.js</span></li>
+                <li class="tech"><img src="src/img/tecnologias/mysql.svg" alt="" width="40" height="40"><span>MySQL</span></li>
+                <li class="tech"><img src="src/img/tecnologias/oracle.svg" alt="" width="40" height="40"><span>Oracle</span></li>
+                <li class="tech"><img src="src/img/tecnologias/microsoftsqlserver.svg" alt="" width="40" height="40"><span>SQL Server</span></li>
+                <li class="tech"><img src="src/img/tecnologias/docker.svg" alt="" width="40" height="40"><span>Docker</span></li>
+                <li class="tech"><img src="src/img/tecnologias/git.svg" alt="" width="40" height="40"><span>Git</span></li>
+            </ul>
+            <p class="tech-extra">Também: APIs REST, WebSockets, filas e jobs no Laravel, PHPUnit, CI/CD, SCSS, Postman, Jira, Figma, Scrum e Kanban.</p>
+        </section>
+
+        <section class="secao" id="projetos" aria-labelledby="titulo-projetos">
+            <h2 id="titulo-projetos">Projetos</h2>
+            <p class="dica-projetos">Passe o mouse sobre um projeto para ver o logo e a descrição.</p>
+            <div class="grade-projetos">
+                <article class="projeto projeto--destaque">
+                    <div class="projeto-flip">
+                        <div class="projeto-face projeto-frente">
+                            <h3>Maxx Lubrificantes</h3>
+                            <p class="projeto-stack">HTML · CSS · JavaScript</p>
+                        </div>
+                        <div class="projeto-face projeto-verso">
+                            <img src="src/img/projetos/maxx-lubrificantes-fundo-branco.jpeg" alt="" width="140" height="72" loading="lazy">
+                            <p>Site institucional de produtos e serviços para uma distribuidora de lubrificantes industriais.</p>
+                        </div>
+                    </div>
+                    <p class="projeto-links">
+                        <a href="https://www.maxxlubrificantes.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Ver site da Maxx Lubrificantes">Ver site</a>
+                    </p>
+                </article>
+                <article class="projeto projeto--destaque">
+                    <div class="projeto-flip">
+                        <div class="projeto-face projeto-frente">
+                            <h3>FII Insight</h3>
+                            <p class="projeto-stack">Angular · Node.js · TypeScript · OpenAI API</p>
+                        </div>
+                        <div class="projeto-face projeto-verso">
+                            <img src="src/img/projetos/fii-insight.png" alt="" width="140" height="72" loading="lazy">
+                            <p>Análise de fundos imobiliários com IA: você digita o ticker e recebe uma explicação simples, feita com dados de várias fontes públicas.</p>
+                        </div>
+                    </div>
+                    <p class="projeto-links">
+                        <a href="https://github.com/theyCallMeDudu/fii-insight" target="_blank" rel="noopener noreferrer" aria-label="Código do FII Insight no GitHub">Código</a>
+                    </p>
+                </article>
+                <article class="projeto projeto--destaque">
+                    <div class="projeto-flip">
+                        <div class="projeto-face projeto-frente">
+                            <h3>Mario Kart Battle Simulator</h3>
+                            <p class="projeto-stack">JavaScript · HTML · CSS · Vite</p>
+                        </div>
+                        <div class="projeto-face projeto-verso">
+                            <p>Projeto didático inspirado em Mario Kart: um simulador de corridas em que cada piloto tem velocidade, manobrabilidade e poder próprios.</p>
+                        </div>
+                    </div>
+                    <p class="projeto-links">
+                        <a href="https://github.com/theyCallMeDudu/mario-kart-battle-simulator" target="_blank" rel="noopener noreferrer" aria-label="Código do Mario Kart Battle Simulator no GitHub">Código</a>
+                        <a href="https://mario-kart-battle-simulator.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Demo do Mario Kart Battle Simulator">Demo</a>
+                    </p>
+                </article>
+                <article class="projeto">
+                    <div class="projeto-flip">
+                        <div class="projeto-face projeto-frente">
+                            <h3>Corridas que corri</h3>
+                            <p class="projeto-stack">React · JavaScript · CSS</p>
+                        </div>
+                        <div class="projeto-face projeto-verso">
+                            <img src="src/img/projetos/corridas_que_corri.png" alt="" width="140" height="72" loading="lazy">
+                            <p>Estudo de React que mostra as corridas de rua que já corri.</p>
+                        </div>
+                    </div>
+                    <p class="projeto-links">
+                        <a href="https://github.com/theyCallMeDudu/corridas-que-corri" target="_blank" rel="noopener noreferrer" aria-label="Código do Corridas que corri no GitHub">Código</a>
+                        <a href="https://corridas-que-corri-c9402.web.app/" target="_blank" rel="noopener noreferrer" aria-label="Demo do Corridas que corri">Demo</a>
+                    </p>
+                </article>
+                <article class="projeto">
+                    <div class="projeto-flip">
+                        <div class="projeto-face projeto-frente">
+                            <h3>Consulta CEP</h3>
+                            <p class="projeto-stack">HTML · CSS · JavaScript</p>
+                        </div>
+                        <div class="projeto-face projeto-verso">
+                            <img src="src/img/projetos/consulta_cep.svg" alt="" width="140" height="72" loading="lazy">
+                            <p>Consulta de CEPs de todo o Brasil pela API ViaCEP.</p>
+                        </div>
+                    </div>
+                    <p class="projeto-links">
+                        <a href="https://github.com/theyCallMeDudu/consultaCEP" target="_blank" rel="noopener noreferrer" aria-label="Código do Consulta CEP no GitHub">Código</a>
+                        <a href="https://consultacepweb.web.app/" target="_blank" rel="noopener noreferrer" aria-label="Demo do Consulta CEP">Demo</a>
+                    </p>
+                </article>
+                <article class="projeto">
+                    <div class="projeto-flip">
+                        <div class="projeto-face projeto-frente">
+                            <h3>MyShelf</h3>
+                            <p class="projeto-stack">PHP · Laravel · Blade</p>
+                        </div>
+                        <div class="projeto-face projeto-verso">
+                            <img src="src/img/projetos/my_shelf.png" alt="" width="140" height="72" loading="lazy">
+                            <p>Sua estante digital: acompanhe o que já leu, está lendo ou pretende ler.</p>
+                        </div>
+                    </div>
+                    <p class="projeto-links">
+                        <a href="https://github.com/theyCallMeDudu/my_shelf" target="_blank" rel="noopener noreferrer" aria-label="Código do MyShelf no GitHub">Código</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao" id="formacao" aria-labelledby="titulo-formacao">
+            <h2 id="titulo-formacao">Formação</h2>
+            <ul class="formacao">
+                <li><strong>Pós-graduação em Desenvolvimento Full Stack</strong> · PUC Minas · 2025–2026</li>
+                <li><strong>Bacharelado em Sistemas de Informação</strong> · UNIRIO · 2018–2023</li>
+                <li><strong>Inglês avançado (C1)</strong></li>
+            </ul>
+        </section>
+
+        <section class="secao sobre" aria-labelledby="titulo-sobre">
+            <img class="foto" src="src/img/flarun-05-tetra.webp" alt="Eduardo Coelho durante a corrida FlaRun" width="280" height="280" loading="lazy">
+            <div>
+                <h2 id="titulo-sobre">Fora do código</h2>
+                <p>Sou carioca e tenho <span id="idade">29</span> anos. Flamenguista, fã de <em>Fórmula 1</em>, e amo correr.</p>
+                <p>O que mais gosto no meu trabalho é ver o que construí sendo usado pelas pessoas.</p>
+            </div>
+        </section>
+
+        <section class="secao contato" id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Vamos conversar?</h2>
+            <p>Estou aberto a oportunidades como desenvolvedor fullstack. O jeito mais rápido de falar comigo é por e-mail ou LinkedIn.</p>
+            <div class="acoes">
+                <a class="botao botao--primario" href="mailto:coelho.edu96@gmail.com">
+                    <svg aria-hidden="true" width="20" height="20"><use href="#i-email"/></svg>
+                    coelho.edu96@gmail.com
+                </a>
+                <a class="botao botao--secundario" href="https://www.linkedin.com/in/eduardo-coelho-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-nome">
+            <p>Eduardo Coelho</p>
+            <p>Desenvolvedor Fullstack Sênior</p>
         </div>
-        <hr style="color: #edee28;">
-    </section>
-    <section class="projetos">
-        <div class="row">
-            <h2>Projetos</h2>
-            <div id="projects-slider"></div>
-            <div id="projects-dots" class="projects-dots"></div>
-        </div>
-        <hr style="color: #edee28;">
-    </section>
-    <section>
-        <footer class="footer">
-            <div class="footer-nome-profissao">
-                <p>Eduardo Coelho</p>
-                <p>Desenvolvedor Fullstack</p>
-            </div>
-            <div class="social">
-                <div class="col-md-1 fundo-icone">
-                    <a href="https://github.com/theyCallMeDudu" target="blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <div class="col-md-1 fundo-icone">
-                    <a href="https://www.linkedin.com/in/eduardo-coelho-/" target="blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-                <div class="col-md-1 fundo-icone">
-                    <a href="mailto:coelho.edu96@gmail.com" target="blank">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </section>
-    <script src="js/jquery.js"></script>
-    <script src="js/funcoes.js"></script>
+        <ul class="social">
+            <li><a class="icone" href="https://github.com/theyCallMeDudu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg aria-hidden="true" width="22" height="22"><use href="#i-github"/></svg></a></li>
+            <li><a class="icone" href="https://www.linkedin.com/in/eduardo-coelho-/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg aria-hidden="true" width="22" height="22"><use href="#i-linkedin"/></svg></a></li>
+            <li><a class="icone" href="mailto:coelho.edu96@gmail.com" aria-label="E-mail"><svg aria-hidden="true" width="22" height="22"><use href="#i-email"/></svg></a></li>
+        </ul>
+    </footer>
+
+    <script src="js/funcoes.js" defer></script>
 </body>
 </html>
